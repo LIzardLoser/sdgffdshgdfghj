@@ -1,6 +1,8 @@
 #include <iostream>
 #include <conio.h>
 #include <fstream>
+#include <cstdio>
+#include <windows.h>
 using namespace std;
 
 int main() {
@@ -11,19 +13,10 @@ int main() {
     char ch;
     cin >> value;
 
-    if (value == "Hi" || value == "hi")
-    {
+    if (value == "Hi" || value == "hi"){
       cout << "Hi There\n";
     }
-    else if (value == "close" || value == "Close")
-    {
-      exit(0);
-    }
-    else if (value == "svcd")
-    {
-      ofstream file("TheCode.txt");
-      file << "LOL IMAGINE";
-      file.close();
+    else if (value == "close" || value == "Close"){
       exit(0);
     }
     else {
